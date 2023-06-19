@@ -16,7 +16,7 @@ class AddTodo extends Component {
   handleChange = (event) => {
     this.setState({
       content: event.target.value,
-      date: Date.toLocaleString('en-US')
+      date: Date().toLocaleString('en-US')
     });
   };
   // The handleSubmit function collects the forms input and puts it into the react state.

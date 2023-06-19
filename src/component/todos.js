@@ -19,7 +19,7 @@ const Todos = ({ todos, deleteTodo }) => {
             AddTodo.js. All we need to do is return the todo list item {todo.content} */}
             <ListItemButton component="a" href="#simple-list">
               <Checkbox style = {{paddingLeft: 0}} color = "primary" 
-              onClick = {() => this.deleteTodo(deleteTodo.id)}/>
+              onClick = {() => deleteTodo(todo.id)}/>
                 <ListItemText primary={todo.content} secondary = {todo.date}/>
             </ListItemButton>
           </Card>
